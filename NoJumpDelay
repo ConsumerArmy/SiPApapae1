@@ -1,0 +1,8 @@
+local playerName = game.Players.LocalPlayer.Name
+	local WorkSpace = game:GetService("Workspace")
+	local Workspaceplayer = WorkSpace:FindFirstChild(playerName)
+
+if Workspaceplayer:FindFirstChild("JumpDebouncer") then
+     Workspaceplayer.JumpDebouncer:Destroy()
+     
+    end
