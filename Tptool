@@ -1,0 +1,33 @@
+local tptool1 = Instance.new("Tool")
+tptool1.Name = "Consumer TP"
+tptool1.CanBeDropped = false
+tptool1.RequiresHandle = false
+tptool1.Parent = game.ReplicatedStorage
+local tptool2 = game.ReplicatedStorage["Consumer TP"]:Clone()
+
+
+
+	local playerName = game.Players.LocalPlayer
+	local WorkSpace = game:GetService("Workspace")
+		tptool2.Parent = playerName.Backpack
+    
+    
+    
+    
+    
+    local function KBUKUDPAA_fake_script() -- Tptool.LocalScript 
+	local script = Instance.new('LocalScript', tptool2)
+
+
+
+	local tool = script.Parent
+	local player = game.Players.LocalPlayer
+	tool.Equipped:Connect(function(mouse)
+		mouse.Button1Down:Connect(function()
+			player.Character.HumanoidRootPart.CFrame = CFrame.new(mouse.Hit.p)
+		end)
+	end)
+end
+
+
+coroutine.wrap(KBUKUDPAA_fake_script)()
