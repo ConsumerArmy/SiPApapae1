@@ -1,0 +1,21 @@
+
+
+		local TPCFrame =
+					CFrame.new(
+					616.49939,
+          33.7190742, 
+          -78.5027771,
+          0.546885848,
+          1.83770599e-08,
+          0.837207198,
+          5.36782281e-08,
+          1, 
+          -5.70144678e-08,
+          -0.837207198,
+          7.61202017e-08,
+          0.546885848
+					)
+          
+				local User = game.Players.LocalPlayer.Character.HumanoidRootPart
+					User.CFrame = TPCFrame
+				
