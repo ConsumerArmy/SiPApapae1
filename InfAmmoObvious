@@ -1,0 +1,19 @@
+
+        
+        
+        local playerName = game.Players.LocalPlayer.Name
+            local WorkSpace = game:GetService("Workspace")
+            local Workspaceplayer = WorkSpace:FindFirstChild(playerName)
+     if WorkSpace:FindFirstChild(playerName) then
+        while true do
+            wait(0.1)
+            if Workspaceplayer:FindFirstChild("Musket") then
+   musket.Loaded.Value = true
+        musket.Ammo.Value = 1
+        musket.MadeReady.Value = true
+        musket.LDS.Value = true
+        musket.Aiming.Value = true
+            end
+
+        end
+    end
