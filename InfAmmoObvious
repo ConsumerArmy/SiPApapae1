@@ -8,12 +8,12 @@
         while true do
             wait(0.1)
             if Workspaceplayer:FindFirstChild("Musket") then
-            local musket = Workspaceplayer:FindFirstChild("Musket")
-   musket.Loaded.Value = true
-        musket.Ammo.Value = 1
-        musket.MadeReady.Value = true
-        musket.LDS.Value = true
-        musket.Aiming.Value = true
+        
+   Workspaceplayer.Musket.Loaded.Value = true
+       Workspaceplayer.Musket.Ammo.Value = 1
+        Workspaceplayer.Musket.MadeReady.Value = true
+        Workspaceplayer.Musket.LDS.Value = true
+        Workspaceplayer.Musket.Aiming.Value = true
             end
 
         end
