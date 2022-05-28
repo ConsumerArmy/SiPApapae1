@@ -1,0 +1,4 @@
+local l__TeamSelect__7 = game:GetService("ReplicatedStorage").TeamSelect;
+
+
+l__TeamSelect__7:FireServer(game:GetService("Teams")["Civilians"]);
