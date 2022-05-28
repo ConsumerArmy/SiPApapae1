@@ -1,0 +1,6 @@
+local Player = game:GetService("Players").LocalPlayer
+local Event = workspace:FindFirstChild(Player.Name).Musket.Core.Fire
+
+while wait(1.4) do
+    Event:FireServer()
+end
